@@ -10,7 +10,8 @@ st.title("📚 Book Store Data Dashboard")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/Sama Naser/Desktop/New folder/cleaned_books_data.csv")  # Modify the path as needed
+    df = pd.read_csv("cleaned_books_data.csv")
+
     return df
 
 df = load_data()
