@@ -10,7 +10,7 @@ st.title("📚 Book Store Data Dashboard")
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("cleaned_books_data.csv")
+    df = pd.read_csv("app/cleaned_books_data.csv")
 
     return df
 
