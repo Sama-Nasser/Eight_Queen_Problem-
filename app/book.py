@@ -182,10 +182,7 @@ with tab6:
     st.write(f"Highest rating: {df['Rating'].max()}")
     st.write(f"Lowest rating: {df['Rating'].min()}")
 
-    # مقارنة الأسعار حسب الفئات
-    st.header("💰 Price Comparison by Category")
-    avg_price_per_category = df.groupby('Category')['Price'].mean().sort_values(ascending=False)
-    st.bar_chart(avg_price_per_category)
+
 
     # توزيع عدد الكتب المتاحة
     st.header("📦 Books Availability Distribution")
